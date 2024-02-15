@@ -4,6 +4,7 @@ import com.montaury.pokebagarre.fixtures.ConstructeurDePokemon;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
+import static org.assertj.core.api.Assertions.assertThat;
 
 class PokemonTest {
 
@@ -17,7 +18,8 @@ class PokemonTest {
         boolean resultat = Pokemon1.estVainqueurContre(Pokemon2);
 
         // THEN
-        assertEquals(true,resultat);
+        // assertEquals(true,resultat);
+        assertThat(resultat).isTrue();
     }
 
     @Test
