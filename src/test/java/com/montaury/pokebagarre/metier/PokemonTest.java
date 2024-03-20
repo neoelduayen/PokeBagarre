@@ -12,7 +12,7 @@ class PokemonTest {
     void premier_pokemon_devrait_gagner_si_meilleure_attaque() {
         // GIVEN
         Pokemon Pokemon1 = new Pokemon("Pikachu","",new Stats(100,50));
-        Pokemon Pokemon2 = new Pokemon("Togepi","",new Stats(50, 100));
+        Pokemon Pokemon2 = new Pokemon("Rattata","",new Stats(50, 100));
 
         // WHEN
         boolean resultat = Pokemon1.estVainqueurContre(Pokemon2);
